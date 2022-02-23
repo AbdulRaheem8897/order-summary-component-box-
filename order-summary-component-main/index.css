@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+/* font-family: 'Red Hat Display', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size:16px;
+    background-image: url(./images/pattern-background-desktop.svg);
+    min-height: 100vh;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+
+.container{
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.text-content{
+    padding: 7%;
+    text-align: center;
+}
+
+.title{
+    font-size: 40px;
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+  
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.subtitle{
+    opacity: 0.5;
+    font-size: 20px;
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.planbox{
+    background-color: hsl(225, 100%, 98%);
+    padding: 10px;
+border-radius: 25px;
+display: flex;
+justify-content: space-between;
+   
+}
+
+.musicbox{
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: left;
+}
+
+.musicbox div{
+margin-left: 20px;
+}
+
+
+.musicbox div h5{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    font-size: 15px;
+}
+
+.musicbox div p{
+    font-size: 14px;
+    color: hsl(220, 2%, 53%);
+   
+}
+
+
+
+.planbox a {
+
+    color: hsl(223, 47%, 23%);
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+
+.payment{
+  display: block;
+    margin: auto;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    padding: 20px 0;
+    border-radius: 12px;
+    margin-top: 20px;
+    
+}
+
+
+
+.payment:hover{
+   
+    background-color: hsl(245, 75%, 52%);
+    cursor: pointer;
+}
+
+.cancel{
+
+color: hsl(224, 23%, 55%);
+font-size: 15px;
+}
+
+.planbox a:hover{
+    text-decoration: none;
+   color:  hsl(245, 75%, 52%);
+
+}
+
+
+
+@media screen and (max-width: 425px){
+
+    body{
+        background-image: url(./images/pattern-background-mobile.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+      font-size: 14px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+    .container{
+        max-width: 100%;
+    }
+.title{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.subtitle{
+    font-size: 15px;
+}
+    
